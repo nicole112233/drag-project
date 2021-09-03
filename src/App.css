@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #666;
+}
+.App {
+  display: flex;
+  /* border:1px solid red; */
+  padding: 0;
+  margin: 0;
+}
+#page {
+  width: 395px;
+  height: 750px;
+  overflow: auto;
+  margin: 30px;
+  background: #ddd;
+  padding: 10px;
+}
+#page::-webkit-scrollbar{
+  width:0px !important;
+
+}
+#drag {
+  background: #ccc;
+  flex: 1;
+  /* display:flex; */
+}
+#drag button{
+  display: inline-block;
+  width: 100px;
+  background: blue;
+  color: white;
+  border: none;
+  box-shadow: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 4px;
+
+}
+#drag>#drag_con{
+  display:flex;
+}
+#drag .top-area{
+  padding:20px 20px 0 20px;
+  border-bottom:1px solid #aaa;
+}
+.menu-list {
+  padding: 20px 100px 0 20px;
+  float:left;
+  overflow:hidden;
+}
+.menu-list > button {
+  display: block !important;
+  width: 100px;
+  background: blue;
+  color: white;
+  border: none;
+  box-shadow: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+.css-list{
+  flex:1;
+  padding:20px;
+}
+.el-focus{
+  box-shadow: 0px 0px 2px 2px #113388 !important;
+  z-index:9999;
+}
+body.outline .use-outline{
+  outline:1px solid grey;
+  cursor:pointer;
+}

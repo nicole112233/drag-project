@@ -1,0 +1,8 @@
+.css-mode input{
+    width:300px;
+    background:none;
+}
+.css-mode label{
+    width:200px;
+    display:inline-block;
+}
